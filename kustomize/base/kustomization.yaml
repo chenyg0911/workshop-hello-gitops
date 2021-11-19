@@ -3,9 +3,8 @@ kind: Kustomization
 resources:
 - deployment.yaml
 - service.yaml
-- ingress.yaml
-namespace: hello-gitops
+namespace: ci-test
 images:
-- name: hello-gitops
-  newName: emmsys/hello-gitops
-  newTag: bd0b95a1e7e31fd3a30c0a979ffbfc45761b001f
+- name: ci-test-1
+  newName: registry.mooplab.com/test-group/ci-test
+  newTag: 2449fd0f

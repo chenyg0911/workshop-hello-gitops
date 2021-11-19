@@ -2,23 +2,23 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: hello-gitops
-  name: hello-gitops
+    app: ci-test-1
+  name: ci-test-1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-gitops
+      app: ci-test-1
   template:
     metadata:
       labels:
-        app: hello-gitops
+        app: ci-test-1
     spec:
       containers:
-        - image: hello-gitops
-          name: hello-gitops
+        - image: ci-test-1
+          name: ci-test-1
           ports:
             - name: http
               containerPort: 8080
       imagePullSecrets:
-      - name: registry-esys
+      - name: gitlab-registry
