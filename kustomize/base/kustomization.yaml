@@ -6,5 +6,5 @@ resources:
 namespace: ci-test
 images:
 - name: ci-test-1
-  newName: registry.mooplab.com/test-group/ci-test
-  newTag: 2449fd0f
+  newName: chenu2/ci-test
+  newTag: 89d7c25ec8032ed16fc09335a4c99e19bd7a4d98
